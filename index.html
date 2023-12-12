@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>OpenSource. Зачем тебе это надо и как начать?</title>
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+
+        .slide.grey {
+            background-color: #484848;
+            color: white;
+        }
+
+        .slide.grey h2 {
+            color: white;
+        }
+
+        .slide>footer.sup {
+            background-color: transparent;
+        }
+
+        .shower.full .slide>footer.sup {
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            font-size: .75em;
+            padding: 2em var(--slide-side) 1em;
+        }
+
+        .slide h2.has-subtitle {
+            margin-bottom: 0;
+        }
+
+        .slide ul>li:lang(ru)::before {
+            content: 'ᴥ';
+            color: white;
+        }
+
+        .social {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .social__logo {
+            height: 1em;
+            margin-right: .25em;
+        }
+
+        .social .social__link {
+            text-decoration: none;
+            color: inherit;
+            background: none;
+            opacity: .5;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="shower list">
+
+    <header class="caption">
+        <h1>OpenSource. Зачем тебе это надо и как начать?</h1>
+        <p>Егор Левченко</p>
+    </header>
+
+    <section class="slide grey" id="cover">
+        <h2>OpenSource. Зачем тебе это надо и как начать?</h2>
+        <p><a href="https://frtvt.com">Егор Левченко</a></p>
+        <style>
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="about">
+        <h2 class="has-subtitle">Егор Левченко</h2>
+        <p class="subtitle" lang="en">UI developer</p>
+        <ul>
+            <li>Делаю вёрстку в банке для вас</li>
+            <li>Помогаю в Доке в редакции с самого начала&nbsp;<sup>*</sup></li>
+            <li>Ношу QR-код на руке</li>
+        </ul>
+        <img src="./pictures/me.png" alt="я" class="images__me" />
+        <img src="./pictures/qr.png" alt="мой qr" class="images__qr" />
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+            <p>
+                <sup>*</sup>&nbsp;почти
+            </p>
+        </footer>
+        <style>
+            #about .images__me {
+                position: absolute;
+                width: 250px;
+                top: 100px;
+                right: 25px;
+            }
+
+            #about .images__qr {
+                position: absolute;
+                width: 150px;
+                top: 280px;
+                right: 150px;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="spiderman">
+        <img class="place left bottom" src="./pictures/vscode-interface.png">
+        <img class="place right bottom" src="./pictures/codium-interface.png">
+        <img class="place center bottom" src="./pictures/meme-spider.jpeg">
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #spiderman .place {
+                width: 45%;
+            }
+
+            #spiderman .place.left.bottom {
+                left: calc(var(--slide-side) / 2);
+                bottom: calc(var(--slide-side) + 2em);
+            }
+
+            #spiderman .place.right.bottom {
+                right: calc(var(--slide-side) / 2);
+                bottom: calc(var(--slide-side) + 2em);
+            }
+
+            #spiderman .place.center.bottom {
+                bottom: 3em;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="isFree">
+        <h2 class="has-subtitle">Кто-то думает, что свободное === бесплатное</h2>
+        <p class="subtitle">но это не так</p>
+        <div class="double-list">
+            <ul>
+                <li><img src="./pictures/vs-code-logo.png" a></li>
+                <li>Бесплатный (FREE)</li>
+                <li>Даст фичи от Microsoft</li>
+                <li>Есть закрытый код и аналитика</li>
+            </ul>
+            <ul>
+                <li><img src="./pictures/codium-logo.png" alt=""></li>
+                <li>Свободный (Open Source)</li>
+                <li>Нет фич от Microsoft</li>
+                <li>Код открыт, и аналитики нет</li>
+            </ul>
+        </div>
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #isFree .double-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            #isFree .double-list ul {
+                max-width: 45%;
+            }
+
+            #isFree .double-list li:first-of-type::before {
+                content: '';
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="why">
+        <h2>Зачем кто-то занимается
+            OpenSource?</h2>
+        <div class="triple-list">
+            <ul>
+                <li>Начинающие</li>
+                <li>нарабатывают опыт: работы с git и работы с командой</li>
+                <li>пополняют
+                    портфолио</li>
+                <li>заводят знакомства</li>
+            </ul>
+            <ul>
+                <li>Профессионалы</li>
+                <li>опыт менторства и
+                    передачи знаний</li>
+                <li>работа над своим
+                    брендом</li>
+            </ul>
+            <ul>
+                <li>Крупный бизнес</li>
+                <li>PR и реклама</li>
+                <li>Тестирование
+                    нового функционала</li>
+            </ul>
+        </div>
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #why .triple-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            #why .triple-list ul {
+                max-width: 30%;
+            }
+
+            #why .triple-list ul:not(:last-of-type) {
+                border-right: 1px solid white;
+            }
+
+            #why .triple-list li:first-of-type {
+                text-decoration: underline;
+            }
+
+            #why .triple-list li:first-of-type::before {
+                content: '';
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="youCan">
+        <h2 class="has-subtitle">Каждый может начать?</h2>
+        <p class="subtitle">Конечно!</p>
+
+        <img src="./pictures/os.png" alt="Операционки" class="place bottom left">
+        <img src="./pictures/need-help.png" alt="Начать свое или помочь?" class="place top right">
+
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #youCan img.place.top.right {
+                width: 37%;
+                right: var(--slide-side);
+            }
+
+            #youCan img.place.bottom.left {
+                height: 60%;
+                left: var(--slide-side);
+                bottom: 3em;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="contribute">
+        <h2>Поддержать<br />с контрибутом&nbsp;<sup>*</sup></h2>
+
+        <img src="./pictures/contribute.png" alt="Помочь, но чуть-чуть" class="place top right">
+
+        <img src="./pictures/video.png" alt="Время скринкаста" class="place center left">
+
+        <footer class="sup">
+            <div>
+                <figure class="social">
+                    <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                    <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                    <figcaption class="social__caption">
+                        <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                    </figcaption>
+                </figure>
+                <p><sup>*</sup>&nbsp;от английского contribution — вклад</p>
+            </div>
+
+        </footer>
+        <style>
+            #contribute img.place.top.right {
+                width: 39%;
+                right: 3em;
+            }
+
+            #contribute img.place.center.place.left {
+                left: var(--slide-side)
+            }
+
+            #contribute .sup p {
+                margin-bottom: 0;
+            }
+
+            #contribute .social {
+                justify-content: flex-start;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="doka">
+        <h2 class="txt-center">Дока<br />doka.guide</h2>
+
+        <figure class="place bottom">
+
+            <img height="200" src="./pictures/qr-code.png" alt="Дока">
+            <figcaption class="txt-center">
+                Дока — это документация для разработчиков на понятном
+                языке. Её пишет сообщество, чтобы помогать друг другу.
+            </figcaption>
+        </figure>
+
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #doka figure.place.bottom {
+                bottom: 2em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #doka figure.place.bottom img {
+                margin-bottom: 2em;
+            }
+
+            #doka figure.place.bottom figcaption {
+                line-height: 1em;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="mdn">
+        <h2 class="txt-center">Почему не MDN?</h2>
+
+        <p class="txt-center">Наша цель:</p>
+        <p class="txt-center">создать русскоязычное дружелюбное сообщество веб-разработчиков, которое делится знаниями в
+            open-source</p>
+
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+        </style>
+    </section>
+
+    <section class="slide grey" id="start">
+        <h2>Как мы стартовали</h2>
+        <img width="900" src="./pictures/walk.png" alt="Путь от ношна к релизу" />
+
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+        </style>
+    </section>
+
+    <section class="slide grey" id="whatUdo">
+        <h2>Что делать вам</h2>
+
+        <div class="triple-list">
+            <figure>
+                <img width="400" src="./pictures/org.png" alt="">
+                <figcaption>#1 заводим организацию</figcaption>
+            </figure>
+            <figure>
+                <img width="400" src="./pictures/notion.png" alt="">
+                <figcaption>#2 пишем ридми</figcaption>
+            </figure>
+            <figure>
+                <img width="400" src="./pictures/licence.png" alt="">
+                <figcaption>#3 выбираем лицензию</figcaption>
+            </figure>
+        </div>
+
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #whatUdo .triple-list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            #whatUdo .triple-list figure {
+                max-width: 33%;
+            }
+
+            #whatUdo .triple-list figcaption {
+                line-height: 1em;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="licence">
+        <h2>Кстати о лицензиях</h2>
+        <div class="icon-cc">
+            <img src="./pictures/cc.png">
+            &nbsp;В Доке есть
+        </div>
+        <ul>
+            <li>MIT — для кода</li>
+            <li>CC BY-NC-SA 4.0 — для
+                текста</li>
+            <li>лицензии для шрифтов</li>
+            <li>CC BY-NC-ND 4.0 — для
+                всего остального</li>
+        </ul>
+        <figure class="qr place center right">
+            <img width="300" src="./pictures/qr-code-2.png" alt="qr">
+            <figcaption class="txt-center">статьи про то,как
+                начать<br />и о лицензиях тоже</figcaption>
+        </figure>
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #licence .icon-cc {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1em;
+            }
+
+            #licence .qr {
+                line-height: 1em;
+                right: var(--slide-side);
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="repo">
+        <h2 class="has-subtitle">Заведём репозиторий?</h2>
+        <p class="subtitle">а ещё документацию, issue, первые PR и дискуссии</p>
+
+        <img src="./pictures/video.png" alt="Время скринкаста" class="place center left">
+
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #repo img.place.center.place.left {
+                left: var(--slide-side)
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="fans">
+        <h2 class="has-subtitle">А если кто-то придёт?</h2>
+        <p class="subtitle">Так это хорошо!</p>
+
+        <img src="./pictures/video.png" alt="Время скринкаста" class="place center left">
+
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+            <p>
+                Придерживаемся правил, приходим в PR и в issue заводим
+                чат для фанатов
+            </p>
+        </footer>
+        <style>
+            #fans img.place.center.place.left {
+                left: var(--slide-side)
+            }
+
+            #fans footer p {
+                margin-bottom: 0;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="telegram">
+        <h2 class="has-subtitle">Кстати, присоединяйтесь</h2>
+        <p class="subtitle">к чату в телеграм</p>
+
+        <figure class="qr place bottom left">
+            <img width="200" src="./pictures/qr-code-4.png" alt="qr">
+            <figcaption class="txt-center">узнавать новое</figcaption>
+        </figure>
+
+        <figure class="qr place bottom right">
+            <img width="200" src="./pictures/qr-code-5.png" alt="qr">
+            <figcaption class="txt-center">общаться</figcaption>
+        </figure>
+
+        <footer class="sup">
+            <figure class="social">
+                <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                <figcaption class="social__caption">
+                    <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                </figcaption>
+            </figure>
+        </footer>
+        <style>
+            #telegram .bottom.place.left {
+                left: var(--slide-side);
+                bottom: var(--slide-side);
+            }
+
+            #telegram .place.bottom.place.right {
+                line-height: 1em;
+                right: var(--slide-side);
+                bottom: 6em;
+            }
+        </style>
+    </section>
+
+    <section class="slide grey" id="final">
+        <h2 class="has-subtitle">Для вас душнил</h2>
+        <p class="subtitle">Егор Левченко</p>
+        <ul>
+            <li>
+                <figure class="social">
+                    <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
+                    <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
+                    <figcaption class="social__caption">
+                        <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure class="social">
+                    <img src="./pictures/telegram.png" alt="telegram" class="social__logo">
+                    <figcaption class="social__caption">
+                        <a href="https://t.me/frtvt" class="social__link">t.me/frtvt</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>frtvt.com</li>
+        </ul>
+        <p class="txt-center">Спасибо!</p>
+        <img src="./pictures/me.png" alt="я" class="images__me" />
+        <style>
+            #final .images__me {
+                position: absolute;
+                width: 250px;
+                top: 100px;
+                right: 25px;
+            }
+
+            #final .social {
+                display: inline-flex;
+            }
+
+            #final .social__link {
+                opacity: 1;
+            }
+
+            #final.slide ul>li::before {
+                content: '';
+            }
+        </style>
+    </section>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+
+</html>
