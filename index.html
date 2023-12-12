@@ -104,9 +104,6 @@
         <img src="./pictures/me.png" alt="я" class="images__me" />
         <img src="./pictures/qr.png" alt="мой qr" class="images__qr" />
         <footer class="sup">
-            <p>
-                <sup>*</sup>&nbsp;почти
-            </p>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -114,6 +111,9 @@
                     <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
                 </figcaption>
             </figure>
+            <p>
+                <sup>*</sup>&nbsp;почти
+            </p>
         </footer>
         <style>
             #about .images__me {
@@ -137,7 +137,6 @@
         <img class="place right bottom" src="./pictures/codium-interface.png">
         <img class="place center bottom" src="./pictures/meme-spider.jpeg">
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -185,7 +184,6 @@
             </ul>
         </div>
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -237,7 +235,6 @@
             </ul>
         </div>
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -273,13 +270,12 @@
 
     <section class="slide grey" id="youCan">
         <h2 class="has-subtitle">Каждый может начать?</h2>
-        <p class="subtitle" lang="en">Конечно!</p>
+        <p class="subtitle">Конечно!</p>
 
         <img src="./pictures/os.png" alt="Операционки" class="place bottom left">
         <img src="./pictures/need-help.png" alt="Начать свое или помочь?" class="place top right">
 
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -307,11 +303,10 @@
 
         <img src="./pictures/contribute.png" alt="Помочь, но чуть-чуть" class="place top right">
 
-        <img src="./pictures/video.png" alt="Время скринкаста" class="place center left">
+        <img src="./pictures/doka-github.png" alt="Время скринкаста" class="place center left">
 
         <footer class="sup">
             <div>
-                <p><sup>*</sup>&nbsp;от английского contribution — вклад</p>
                 <figure class="social">
                     <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                     <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -319,6 +314,7 @@
                         <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
                     </figcaption>
                 </figure>
+                <p><sup>*</sup>&nbsp;от английского contribution — вклад</p>
             </div>
 
         </footer>
@@ -329,7 +325,9 @@
             }
 
             #contribute img.place.center.place.left {
-                left: var(--slide-side)
+                left: calc(var(--slide-side) - .5em);
+                padding-top: 1em;
+                max-width: 33%;
             }
 
             #contribute .sup p {
@@ -355,7 +353,6 @@
         </figure>
 
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -390,7 +387,6 @@
             open-source</p>
 
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -408,7 +404,6 @@
         <img width="900" src="./pictures/walk.png" alt="Путь от ношна к релизу" />
 
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -440,7 +435,6 @@
         </div>
 
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -486,7 +480,6 @@
                 начать<br />и о лицензиях тоже</figcaption>
         </figure>
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -510,12 +503,12 @@
     </section>
 
     <section class="slide grey" id="repo">
-        <h2>Заведём репозиторий?</h2>
+        <h2 class="has-subtitle">Заведём репозиторий?</h2>
+        <p class="subtitle">а ещё документацию, issue, первые PR и дискуссии</p>
 
-        <img src="./pictures/video.png" alt="Время скринкаста" class="place center left">
+        <img src="./pictures/create-org.png" alt="Время скринкаста" class="place center left">
 
         <footer class="sup">
-            <p>а ещё документацию, issue, первые PR и дискуссии</p>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -526,7 +519,9 @@
         </footer>
         <style>
             #repo img.place.center.place.left {
-                left: var(--slide-side)
+                left: calc(var(--slide-side) - .5em);
+                padding-top: 1em;
+                max-width: 33%;
             }
         </style>
     </section>
@@ -535,11 +530,9 @@
         <h2 class="has-subtitle">А если кто-то придёт?</h2>
         <p class="subtitle">Так это хорошо!</p>
 
-        <img src="./pictures/video.png" alt="Время скринкаста" class="place center left">
+        <img src="./pictures/milestone.png" alt="Время скринкаста" class="place center left">
 
         <footer class="sup">
-            <p>Придерживаемся правил, приходим в PR и в issue заводим
-                чат для фанатов</p>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
@@ -547,10 +540,20 @@
                     <a href="https://x.com/furtivite" class="social__link">@furtivite</a>
                 </figcaption>
             </figure>
+            <p>
+                Придерживаемся правил, приходим в PR и в issue заводим
+                чат для фанатов
+            </p>
         </footer>
         <style>
             #fans img.place.center.place.left {
-                left: var(--slide-side)
+                left: calc(var(--slide-side) - .5em);
+                padding-top: 1em;
+                max-width: 33%;
+            }
+
+            #fans footer p {
+                margin-bottom: 0;
             }
         </style>
     </section>
@@ -570,7 +573,6 @@
         </figure>
 
         <footer class="sup">
-            <div></div>
             <figure class="social">
                 <img src="./pictures/icon-twitter.png" alt="twitter" class="social__logo">
                 <img src="./pictures/icon-x.png" alt="twitter x" class="social__logo">
